@@ -1,15 +1,49 @@
 function About() {
   return (
-    <section style={{ padding: "60px 40px", background: "#f5f5f5" }}>
-      <h2 style={{ fontSize: "32px", marginBottom: "20px" }}>Biz haqimizda</h2>
-      <p style={{ fontSize: "18px", lineHeight: "1.7", maxWidth: "900px" }}>
-        FAR UCHK BINOKOR ELIT MCHJ — zamonaviy qurilish, sifatli xizmat va
-        ishonchli hamkorlikni o‘z oldiga maqsad qilgan tashkilot. Biz turar joy,
-        noturar joy obyektlari, ta’mirlash va rekonstruksiya ishlari bo‘yicha
-        professional yechimlarni taklif qilamiz.
-      </p>
+    <section id="about" style={styles.section}>
+      <div style={styles.container}>
+        <p style={styles.tag}>BIZ HAQIMIZDA</p>
+
+        <h2 style={styles.title}>
+          Qurilishda ishonch, sifat va mas’uliyat
+        </h2>
+
+        <p style={styles.text}>
+          FAR UCHK BINOKOR ELIT MCHJ — zamonaviy qurilish yechimlarini taklif
+          etuvchi, sifat va ishonchlilikni ustuvor biladigan tashkilot.
+          Biz turar joy, noturar joy obyektlari, ta’mirlash, rekonstruksiya va
+          kompleks qurilish yo‘nalishlarida professional xizmat ko‘rsatamiz.
+        </p>
+      </div>
     </section>
   );
 }
+
+const styles = {
+  section: {
+    padding: "80px 40px",
+    background: "#111111",
+  },
+  container: {
+    maxWidth: "1000px",
+  },
+  tag: {
+    color: "#facc15",
+    fontSize: "14px",
+    textTransform: "uppercase",
+    marginBottom: "14px",
+  },
+  title: {
+    fontSize: "42px",
+    color: "white",
+    marginBottom: "22px",
+  },
+  text: {
+    fontSize: "18px",
+    lineHeight: "1.9",
+    color: "#d0d0d0",
+    maxWidth: "900px",
+  },
+};
 
 export default About;
